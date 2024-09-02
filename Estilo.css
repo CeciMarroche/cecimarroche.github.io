@@ -83,7 +83,8 @@
 
 .foto-perfil img{
     border-radius: 50%;
-    width: 500px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .contacto-formulario{
@@ -125,3 +126,134 @@
     margin: 1rem 0;
     resize: none;
 }
+
+
+@media (min-width: 1366px) {
+    .home {
+        gap: 6em; /* Adjust the gap between elements */
+        padding: 25px 10% 0; /* Adjust padding */
+      }
+    
+      .foto-perfil img {
+        width: 450px; /* Adjust image width */
+      }
+      
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .home {
+        position: relative; /* Necesario para el posicionamiento absoluto de la foto */
+      }
+    
+      .foto-perfil {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+    
+      #home-contenido {
+        position: relative;
+        z-index: 2;
+        margin-top: 200px;
+      }
+
+    #home-contenido p{
+        font-size: 18px;
+        margin: 25px 0 30px;
+    }
+
+    #logo{
+        font-size: 20px;
+    }
+
+    #main-navbar a{
+        font-size: 15px;
+   
+    }
+
+    #home-contenido h3 {
+        font-size: 32px; /* Adjust as needed */
+        margin: 80px 0 10px;
+    }
+    
+    #home-contenido h2 {
+        font-size: 40px; /* Adjust as needed */
+        
+    }
+    
+    #home-contenido p {
+        font-size: 16px; /* Adjust as needed */
+        margin: 20px 0 15px; /* Adjust top and bottom margins */
+    }
+    .contacto{   
+        font-size: 18px;
+        
+       }
+
+
+  }
+
+
+
+@media (max-width: 320px) and (max-width: 568px) {
+    .home {
+        position: relative; /* Necesario para el posicionamiento absoluto de la foto */
+      }
+    
+      .foto-perfil {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+    
+      #home-contenido {
+        position: relative;
+        z-index: 2;
+        margin-top: 200px;
+      }
+
+    #home-contenido p{
+        font-size: 18px;
+        margin: 25px 0 30px;
+    }
+
+    #logo{
+        font-size: 15px;
+    }
+
+    #main-navbar a{
+        font-size: 10px;
+   
+    }
+
+    #home-contenido h3 {
+        font-size: 25px; /* Adjust as needed */
+        margin: 70px 0 0px;
+    }
+    
+    #home-contenido h2 {
+        font-size: 30px; /* Adjust as needed */
+        margin: 5px 0 5px;
+        
+    }
+    
+    #home-contenido p {
+        font-size: 12px; /* Adjust as needed */
+        margin: 5px 0 15px; /* Adjust top and bottom margins */
+    }
+    .contacto{   
+        font-size: 10px;
+        padding: 10px;
+        
+       }
+
+
+
+  }
